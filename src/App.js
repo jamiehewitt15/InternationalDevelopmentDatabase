@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
-import Button from '@material-ui/core/Button';
-import AppBar from '@material-ui/core/Button';
-import Card from '@material-ui/core/Button';
-import './App.css';
-import 'typeface-roboto'
+
+import Topnav from './components/topnav.js';
+import Results from './components/results.js';
+import Infocard from './components/infocard.js';
+import Searcharea from './components/searcharea.js';
+import Titlecard from './components/titlearea.js';
+import Loadmorebutton from './components/loadmorebutton.js';
+import Searchapp from './components/search/Searchapp';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <AppBar color="#000000"/>
-        <p className="App-intro">
-          Welcome to Jamie's website!
-        </p>
-        <Card />
-          <Button variant="contained" color="primary">
-      Hello World
-    </Button>
-      </div>
+      <div style={{backgroundColor: '#F2F3F4', paddingBottom: 40}}>
+<Topnav />
+<Titlecard />
+<Searcharea />
+<div style={{margin: 100}}>
+<Infocard />
+
+</div>
+</div>
     );
   }
 }

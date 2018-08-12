@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Searchapp from './components/search/Searchapp';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+
+import 'normalize.css/normalize.css';
+import '@blueprintjs/icons/lib/css/blueprint-icons.css'
+import '@blueprintjs/core/lib/css/blueprint.css'
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+//registerServiceWorker();
