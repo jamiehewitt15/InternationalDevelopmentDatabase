@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import List from './List'
-import Input from './Input'
 
+import Input from './Input'
+import List from './List'
 
 export default class Searchapp extends Component {
 

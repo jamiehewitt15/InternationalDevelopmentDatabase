@@ -46,3 +46,4 @@ const styles = {
     
   }
 };
+<InputGroup id="search" placeholder="Placeholder text" />

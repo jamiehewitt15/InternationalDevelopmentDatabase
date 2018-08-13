@@ -7,7 +7,7 @@ import Searcharea from './components/searcharea.js';
 import Titlecard from './components/titlearea.js';
 import Loadmorebutton from './components/loadmorebutton.js';
 import Searchapp from './components/search/Searchapp';
-
+import { InputGroup } from "@blueprintjs/core";
 class App extends Component {
   render() {
     return (
@@ -16,8 +16,8 @@ class App extends Component {
 <Titlecard />
 <Searcharea />
 <div style={{margin: 100}}>
-<Infocard />
 
+<Infocard />
 </div>
 </div>
     );

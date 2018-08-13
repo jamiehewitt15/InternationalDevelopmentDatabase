@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Titlecard from './titlearea.js'
 import Searchapp from './search/Searchapp.js'
+import Searchmenu from './search/Searchmenu.js'
 import {
     Card, 
     Elevation, 
@@ -15,23 +16,26 @@ import {
     NavbarHeading,
     Switch,
     Icon,
+    Popover,
+    Menu,
+    MenuItem,
 } from "@blueprintjs/core";
 
 class Searcharea extends React.Component {
   
-state = {searchbarheight: ''}
+state = {searchbar: ''}
 
 
   render() {
 
-    const {searchbarheight} = this.state
+    const {searchbar} = this.state
 
     return (
  
 <Card  style={{marginTop: 20, marginLeft: '20%', marginRight: '20%', paddingRight: 0, paddingLeft: 0, paddingBottom: 0}}> 
    
    
-      <div style={{paddingLeft: 20, paddingRight: 20 }} onClick={() => this.setState({searchbarheight: 
+      <div style={{paddingLeft: 20, paddingRight: 20 }} onClick={() => this.setState({searchbar: 
         <div style={{marginBottom: -20}}>
         <Searchapp/>
         </div>})}>
@@ -44,27 +48,12 @@ state = {searchbarheight: ''}
  
  
 <div >
-{searchbarheight}
+{searchbar}
 </div>
 
 
 
-<Navbar style={{marginTop: 20, background: '#f9fafb'}}>
-    <Navbar.Group align={Alignment.CENTER}>
-        <Button className="bp3-minimal" text="Sector" />
-        <Navbar.Divider />
-        <Button className="bp3-minimal" text="Country" />
-        <Navbar.Divider />
-        <Button className="bp3-minimal" text="Organisation" />
-        <Navbar.Divider />
-        <Button className="bp3-minimal" text="Funding" />
-        <Navbar.Divider />
-        <Button className="bp3-minimal" text="Project Length" />
-        <Navbar.Divider />
-        </Navbar.Group>
-        
-        
-</Navbar>
+<Searchmenu />
 </Card>
     );
   }
