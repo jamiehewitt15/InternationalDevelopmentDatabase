@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { InputGroup } from "@blueprintjs/core";
 
 export default class Input extends Component {
   state = {
@@ -26,14 +27,17 @@ export default class Input extends Component {
     const { value } = this.state;
 
     return (
-      <input
+      <div style={{paddingTop: 10}}>
+      <InputGroup
         style={styles.input}
-        type={"text"}
+        leftIcon={"search"}
+        type={"search"}
         value={value}
         placeholder={placeholder}
         onChange={this.handleChange}
         onKeyPress={this.handleKeyPress}
       />
+      </div>
     );
   }
 }
@@ -41,9 +45,9 @@ export default class Input extends Component {
 const styles = {
   input: {
     fontSize: "100%",
-    padding: 15,
+    marginTop: 0,
+    paddingLeft: 30,
     borderWidth: 0
     
   }
 };
-<InputGroup id="search" placeholder="Placeholder text" />

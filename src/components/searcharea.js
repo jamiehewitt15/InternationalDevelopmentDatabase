@@ -33,7 +33,9 @@ state = {searchbar: ''}
     return (
  
 <Card  style={{marginTop: 20, marginLeft: '20%', marginRight: '20%', paddingRight: 0, paddingLeft: 0, paddingBottom: 0}}> 
-   
+   <div style={{paddingLeft: 20, paddingRight: 20 }}>
+   <Searchapp />
+   </div>
    
       <div style={{paddingLeft: 20, paddingRight: 20 }} onClick={() => this.setState({searchbar: 
         <div style={{marginBottom: -20}}>
@@ -53,7 +55,6 @@ state = {searchbar: ''}
 
 
 
-<Searchmenu />
 </Card>
     );
   }

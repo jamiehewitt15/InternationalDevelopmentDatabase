@@ -7,7 +7,7 @@ import List from './List'
 export default class Searchapp extends Component {
 
   state = {
-    todos: ['Click to remove', 'Learn React', 'Write Code', 'Ship App'],
+    todos: ['All data'],
   }
 
   onAddTodo = (text) => {
