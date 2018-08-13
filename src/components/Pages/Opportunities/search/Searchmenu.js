@@ -44,7 +44,7 @@ class Searchmenu extends React.Component {
                                 <MenuItem text="Finance" />
                                 <MenuItem text="Policy" />
                           </Menu>} >
-          <Button style={{ marginRight: 10}} text="Sector" />
+          <Button style={{ marginRight: 10}} text="Sector" minimal="true" />
         </Popover>
         <Popover icon="blank" content={<Menu>
                                 <MenuItem text="North America" />
@@ -55,7 +55,7 @@ class Searchmenu extends React.Component {
                                 <MenuItem text="Pacific" />
                                 
                           </Menu>} >
-          <Button style={{ marginRight: 10}} text="Region" />
+          <Button style={{ marginRight: 10}} text="Region" minimal="true" />
         </Popover>
         <Popover icon="blank" content={<Menu>
                                 <MenuItem text="<$10k" />
@@ -65,7 +65,7 @@ class Searchmenu extends React.Component {
                                 <MenuItem text="$500k - $1m" /> 
                                 <MenuItem text="$1m +" /> 
                           </Menu>} >
-          <Button style={{ marginRight: 10}} text="Budget" />
+          <Button style={{ marginRight: 10}} text="Budget" minimal="true"/>
         </Popover>
         
         

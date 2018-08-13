@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Searchapp from './components/search/Searchapp';
 import App from './App';
 
 import 'normalize.css/normalize.css';

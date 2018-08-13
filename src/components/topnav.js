@@ -22,9 +22,9 @@ class Topnav extends React.Component {
         <Navbar.Divider />
         </Navbar.Group>
         <Navbar.Group align={Alignment.RIGHT}>
-        <input class="bp3-input" placeholder="Search files..." type="text" />
+        
         <Navbar.Divider />
-        <Button className="bp3-minimal" icon="home" text="Home" />
+        
         <Button className="bp3-minimal" icon="person" text="Login" />
     </Navbar.Group>
 </Navbar>

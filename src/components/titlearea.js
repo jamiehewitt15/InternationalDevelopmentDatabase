@@ -1,18 +1,30 @@
 import React, { Component } from 'react';
-
+import Opportunities from './Pages/Opportunities/Opportunitiespage.js';
+import Jobs from './Pages/Jobs/Jobspage.js';
 import { Button, Card, Elevation, Navbar, AnchorButton } from "@blueprintjs/core";
 
 
 class Titlecard extends React.Component {
   
   state = {infogroup: 'Funding opportunities'}
+
+  renderSwitch(infogroup) {
+  switch(infogroup) {
+    case 'All Jobs':
+      return <Jobs />;
+     case 'Funding Opportunities': 
+      return <Opportunities />;
+    default:
+      return <Opportunities />;
+  }
+}
   
   render() {
 
     const {infogroup} = this.state
 
     return (
- 
+<div> 
 <Card interactive={false}  style={{margin: 0, paddingBottom: 5}}>
     <div style={{textAlign: 'center'}}>
     <h1 style={{marginRight: 10, color: '#333', lineHeight: 1.5, fontSize: '50px', fontWeight: 100}}>{infogroup}</h1>
@@ -29,7 +41,10 @@ class Titlecard extends React.Component {
    
      
 </div>
+
 </Card>
+{this.renderSwitch(infogroup)}
+</div>
     );
   }
 }

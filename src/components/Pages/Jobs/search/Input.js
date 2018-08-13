@@ -27,10 +27,11 @@ export default class Input extends Component {
     const { value } = this.state;
 
     return (
-      <div style={{paddingTop: 10}}>
+      <div style={{paddingTop: 20}}>
       <InputGroup
         style={styles.input}
         leftIcon={"search"}
+        large="true"
         type={"search"}
         value={value}
         placeholder={placeholder}
@@ -46,7 +47,7 @@ const styles = {
   input: {
     fontSize: "100%",
     marginTop: 0,
-    paddingLeft: 30,
+    paddingLeft: 40,
     borderWidth: 0
     
   }
