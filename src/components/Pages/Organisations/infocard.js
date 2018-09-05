@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import SortTable from './Table.js'
 
 import { Button, Card, Elevation } from "@blueprintjs/core";
 import { FUNDINGDATA } from './data/funding-data.js';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { Table } from 'react-bootstrap';
-
+import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
 
 class Infocard extends React.Component {
 
@@ -28,6 +29,7 @@ renderSwitch(num_cards){
  
     
         <div>
+        <SortTable />
 
         {FUNDINGDATA.slice(0, num_cards).map(item => 
           <div key={item.id}>
