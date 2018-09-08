@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Topnav from './components/topnav.js';
 import Titlecard from './components/titlearea.js';
-import Loadmorebutton from './components/loadmorebutton.js';
+
 
 
 class App extends Component {

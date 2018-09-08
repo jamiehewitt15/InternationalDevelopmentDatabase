@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import SearchInput, {createFilter} from 'react-search-input'
  
-import { FUNDINGDATA } from './data/funding-data.js';
+import { JOBSDATA } from './data/jobs-data.js';
  
 const KEYS_TO_FILTERS = ['title']
  
@@ -15,14 +15,14 @@ class SearchApp extends Component {
   }
  
   render () {
-    const filteredData = FUNDINGDATA.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS))
+    const filteredData = JOBSDATA.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS))
  
     return (
       <div>
         <SearchInput className="search-input" onChange={this.searchUpdated} />
-        {filteredData.map(FUNDINGDATA => {
+        {filteredData.map(JOBSDATA => {
           return (
-            <div className="title" key={FUNDINGDATA.title}>
+            <div className="title" key={JOBSDATA.title}>
               
             </div>
           )

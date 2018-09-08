@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-import Infocard from './infocard.js';
+import SortTable from './table.js';
 import Searcharea from './search/searcharea.js';
 
 
@@ -12,7 +12,7 @@ class Jobs extends Component {
 		<Searcharea />
 		<div style={{margin: 100}}>
 
-			<Infocard />
+			<SortTable />
 
 		</div>
 	</div>

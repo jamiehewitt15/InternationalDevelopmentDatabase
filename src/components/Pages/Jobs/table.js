@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ORGANISATIONDATA } from './data/organisation-data.js';
+import { JOBSDATA } from './data/jobs-data.js';
 import {BootstrapTable, TableHeaderColumn, caretRender} from 'react-bootstrap-table';
 import { Icon, Button, MenuItem  } from "@blueprintjs/core";
 
@@ -52,13 +52,13 @@ renderCaret = (direction, fieldName) => {
     return (
       <div>
        
-        <BootstrapTable ref='table' data={ ORGANISATIONDATA }  headerStyle={ { background: '#f9fafb' } } tableStyle={ { background: '#ffffff' } } pagination expandableRow={ this.isExpandableRow }
+        <BootstrapTable ref='table' data={ JOBSDATA }  headerStyle={ { background: '#f9fafb' } } tableStyle={ { background: '#ffffff' } } pagination expandableRow={ this.isExpandableRow }
         expandComponent={ this.expandComponent } search searchPlaceholder='Type to search...'>
-            <TableHeaderColumn dataField='Organisation' isKey={ true } width='450px' dataSort={ true } caretRender={ this.renderCaret }>Organisation  </TableHeaderColumn>
-            <TableHeaderColumn dataField='Web'  dataSort={ true } >Website  </TableHeaderColumn>
-            <TableHeaderColumn dataField='Email'  dataSort={ true } >Email  </TableHeaderColumn>            
-            <TableHeaderColumn dataField='Telephone' dataSort={ true } >Phone  </TableHeaderColumn>
-            <TableHeaderColumn dataField='Type' dataSort={ true }  >Sector  </TableHeaderColumn>
+            <TableHeaderColumn dataField='Job' isKey={ true } width='450px' dataSort={ true } caretRender={ this.renderCaret }>Job  </TableHeaderColumn>
+            <TableHeaderColumn dataField='Organisation'  dataSort={ true } caretRender={ this.renderCaret }>Organisation  </TableHeaderColumn>
+            <TableHeaderColumn dataField='Deadline'  dataSort={ true } caretRender={ this.renderCaret }>Deadline  </TableHeaderColumn>            
+            <TableHeaderColumn dataField='Tag1' dataSort={ true } >Phone  </TableHeaderColumn>
+            <TableHeaderColumn dataField='Image' dataSort={ true }  >  </TableHeaderColumn>
                    
             </BootstrapTable>
       </div>

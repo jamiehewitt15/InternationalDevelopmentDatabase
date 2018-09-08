@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SearchApp from './search.js'
 import { Button, Card, Elevation } from "@blueprintjs/core";
-import { FUNDINGDATA } from './data/funding-data.js';
+import { JOBSDATA } from './data/jobs-data.js';
 import { Table } from 'react-bootstrap';
 
 
@@ -44,7 +44,7 @@ renderSwitch(num_cards){
                     <th>Apply</th>
                   </tr>
                 </thead>
-                 {FUNDINGDATA.slice(0, num_cards).map(item => 
+                 {JOBSDATA.slice(0, num_cards).map(item => 
                 <tbody key={item.id}>
                   <tr style={{background: '#fff'}}>
                     <td>{item.organisation}</td>
